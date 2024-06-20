@@ -1,0 +1,32 @@
+import random
+
+random_dict=[
+    {
+    "Likes":random.randint(0,10),
+    "Comments":random.randint(0,10),
+    "Shares":random.randint(0,10)
+    },
+    {
+    "Comments":random.randint(0,10),
+    "Shares":random.randint(0,10)
+    },
+    {
+    "Likes":random.randint(0,10),
+    "Comments":random.randint(0,10),
+    "Shares":random.randint(0,10)
+    },
+    {
+    "Comments":random.randint(0,10),
+    "Shares":random.randint(0,10)
+    },
+    {
+    "Likes":random.randint(0,10),
+    "Comments":random.randint(0,10),
+    "Shares":random.randint(0,10)
+    },
+    {
+    "Likes":random.randint(0,10),
+    "Comments":random.randint(0,10),
+    "Shares":random.randint(0,10)
+    },   
+]
