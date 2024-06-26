@@ -1,0 +1,13 @@
+from stock_api_class import Stock_Api
+from stock_price_comparison_class import Compare_Stock
+from news_api_class import News_Api
+from send_email_class import Send_Email
+
+
+stock=Stock_Api()
+compare_stocks=Compare_Stock(yesterday_stock_price=stock.stock_price_for_yesterday,day_before_yesterday_stock_price=stock.stock_price_for_day_before_yesterday)
+stock_diff=compare_stocks.get_stock_difference()
+stock_percent=compare_stocks.get_stock_percentage()
+news=News_Api()
+news_data=news.data_list
+email_obj=Send_Email(news_data=news_data,stock_percentage=stock_percent)
